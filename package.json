@@ -1,0 +1,25 @@
+{
+  "name": "av-show-tell",
+  "version": "1.0.0",
+  "description": "Show and tell about my audio visual installations",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rumyra/av-show-tell.git"
+  },
+  "keywords": [
+    "audio",
+    "visual",
+    "installaions.",
+    "interactive"
+  ],
+  "author": "Ruth John",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Rumyra/av-show-tell/issues"
+  },
+  "homepage": "https://github.com/Rumyra/av-show-tell#readme"
+}
