@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!--char set (lang above)-->
+  <meta charset="utf-8">
+
+  <!--device/browser shizzle-->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!--meta content-->
+  <link rel="shortcut icon" href="favicon.ico" />
+  
+  <meta name="author" content="Ruth John (@rumyra)">
+  <meta name="dcterms.rightsHolder" content="Ruth John 2016">
+  <title>Interative A/V</title>
+
+  <link rel="stylesheet" href="reveal/css/reveal.css">
+  <link rel="stylesheet" href="reveal/css/theme/blood.css" id="theme">
+  <link rel="stylesheet" href="reveal/lib/css/zenburn.css" id="theme">
+  <script src="reveal/js/reveal.js"></script>
+
+  <link href="css/extraTalk.css" rel="stylesheet" type="text/css">
+
+  <style type="text/css">
+  #apiList p {display: inline-block; margin:20px;}
+  </style>
+  
+</head>
+
+<!--
+  Some of you may know me for this
+  This is a portable VJ kit
+
+  But I'm not here to talk to you about that
+
+  Javascript
+
+  Ruby
+
+  Interactive VJ
+
+  Made ruby, lined them up, made some settings, then this guy Ben... Benjamin... Benjamin Foxall, yes. He came out with this blog post which was all about using force layout
+
+  Awesome
+
+  So I did that
+
+  Demo
+
+  Improvements
+
+  Demo
+-->
+
+<body class="talk">
+  <div class="reveal">
+    <div class="slides">
+      <section>
+        <section>
+          <h1>Interative A/V</h1>
+        </section>
+        <section>
+          <h2>Ruth [@Rumyra]</h2>
+          <aside class="notes">
+            <p>Hi my names Ruth</p>
+            <p>Some of you may know me for this:</p>
+          </aside>
+        </section>
+        <section data-background="public/laptop.jpg">
+          <p>Remember me from</p>
+          <aside class="notes">
+            <p>I took one laptop</p>
+          </aside>
+        </section>
+        <section data-background="public/gear.jpg">
+          <h2 class="fragment fade-in">I project visuals to music</h2>
+          <h2 class="fragment fade-in">webvj.ninja</h2>
+          <aside class="notes">
+            <p>I'm a VJ, I coded my own visual mixing software</p>
+            <p>I'm not the only one on the web that has done this - I've formed a collective - you can find out more here and join our slack channel if you want to come talk visuals, music, audio api, MIDI, animation etc...</p>
+            <p>This is my portable VJ kit</p>
+          </aside>
+        </section>
+        <section data-background="public/laptop.jpg">
+          <aside class="notes">
+            <p>I took one laptop</p>
+          </aside>
+        </section>
+        <section data-background="public/projector.jpg">
+          <aside class="notes">
+            <p>I took one little projector</p>
+          </aside>
+        </section>
+        <section data-background="public/icon.jpg">
+          <aside class="notes">
+            <p>MIDI controller</p>
+          </aside>
+        </section>
+        <section data-background="public/bag.jpg">
+          <aside class="notes">
+            <p>Bag</p>
+          </aside>
+        </section>
+        <section data-background="public/scissors.jpg">
+          <aside class="notes">
+            <p>Scissors</p>
+          </aside>
+        </section>
+        <section data-background="public/mdf.jpg">
+          <aside class="notes">
+            <p>some mdf and a strap</p>
+          </aside>
+        </section>
+        <section data-background="public/sew.jpg">
+          <aside class="notes">
+            <p>Did some cutting and sewing</p>
+          </aside>
+        </section>
+        <section data-background="public/strapped.jpg">
+          <aside class="notes">
+            <p>And then strapped it on myself like an userette tray and took it round the streets of Bristol, projecting and mixing visuals to music</p>
+          </aside>
+        </section>
+        <section data-background="public/me.jpg">
+          <h2 class="fragment fade-in">24ways.org</h2>
+          <aside class="notes">
+            <p>You can read about it on 24 ways</p>
+            <p>But that's not why we're here - right?</p>
+          </aside>
+        </section>
+
+        <section data-background="public/ohyes.gif">
+          <h2>Javascript</h2>
+          <aside class="notes">
+            <p>Javascript</p>
+            <p>is awesome right! Thanks to garrett for that one</p>
+            <p>So I'm sure you'll believe how awesome it was when a bunch of Ruby peeps approached me to create an interactive installation/projection at a Ruby conference</p>
+          </aside>
+        </section>
+
+        <section data-background="public/awkward.gif">
+          <aside class="notes">
+            <p>hmmmmm</p>
+          </aside>
+        </section>
+
+        <section data-background="public/ruby.jpg">
+          <aside class="notes">
+            <p>I jest - these are the Bath Ruby lot - they are awesome</p>
+          </aside>
+        </section>
+
+        <section>
+          <h2>Requirements:</h2>
+          <h3 class="fragment fade-in">Engaging</h3>
+          <h3 class="fragment fade-in">But not too much</h3>
+          <h3 class="fragment fade-in">Projected</h3>
+          <h3 class="fragment fade-in">Audio activated</h3>
+          <aside class="notes">
+            <p>Requirements</p>
+          </aside>
+        </section>
+
+        <section data-background="public/shera.jpg">
+          <p>shera idea</p>
+          <aside class="notes">
+            <p>lots of ideas</p>
+          </aside>
+        </section>
+
+        <section>
+          <h3>Everyone got a Ruby</h3>
+          <h3 class="fragment fade-in">Control their Ruby</h3>
+          <aside class="notes">
+            <p>Requirements</p>
+          </aside>
+        </section>
+
+        <section>
+          <h3>So I made a Ruby - and as people joined via web sockets more rubies (MORE SLIDES LINE THEM UP) but in lines isn't cool</h3>
+          <aside class="notes">
+            <p>Requirements</p>
+          </aside>
+        </section>
+
+        <section>
+          <h3>Then everyone got these options on their phone when they joined so they could change and control their ruby</h3>
+          <aside class="notes">
+            <p>Requirements</p>
+          </aside>
+        </section>
+
+        <section>
+          <h3>Rubies lined up modified</h3>
+          <aside class="notes">
+            <p>Requirements</p>
+          </aside>
+        </section>
+
+        <section>
+          <h3>Then this guy, like Ben something wrote a blog post about using d3 force layout - check it out - it's pretty cool so I did that</h3>
+          <aside class="notes">
+            <p>Requirements</p>
+          </aside>
+        </section>
+
+        <section>
+          <h3>Demo</h3>
+          <aside class="notes">
+            <p>Requirements</p>
+          </aside>
+        </section>
+
+        <section data-background="public/ohyes.gif">
+          <h2>Javascript</h2>
+          <aside class="notes">
+          </aside>
+        </section>
+
+        <section>
+          <h2>I learnt:</h2>
+          <h3 class="fragment fade-in">People liked it</h3>
+          <h3 class="fragment fade-in">Too many options</h3>
+          <h3 class="fragment fade-in">Frequencies not understood</h3>
+          <h3 class="fragment fade-in">Not scalable</h3>
+          <aside class="notes">
+            <p>Requirements</p>
+          </aside>
+        </section>
+
+        <section>
+          <h3>Version 2.0: images</h3>
+          <aside class="notes">
+            <p>Requirements</p>
+          </aside>
+        </section>
+
+        <section>
+          <h3>Demo</h3>
+          <aside class="notes">
+            <p>Requirements</p>
+          </aside>
+        </section>
+
+        <section>
+          <h2>What's next?</h2>
+          <h3 class="fragment fade-in">Jankiness</h3>
+          <h3 class="fragment fade-in">Take a photo</h3>
+          <h3 class="fragment fade-in">Loads of other ideas</h3>
+          <aside class="notes">
+            <p>Requirements</p>
+          </aside>
+        </section>
+
+        <section data-background="public/ohyes.gif">
+          <h2>Javascript</h2>
+          <h3>@Rumyra</h3>
+          <h3>webvj.ninja</h3>
+          <aside class="notes">
+          </aside>
+        </section>
+
+      </section>
+    </div></div>
+
+
+<script src="reveal/plugin/notes/notes.js"></script>
+<script src="reveal/plugin/highlight/highlight.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+<!-- <script src="audioVisual.js"></script> -->
+<!-- <script src="demos.js"></script> -->
+
+<script type="text/javascript">
+
+// Reveal~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Reveal.initialize({
+
+  // Display controls in the bottom right corner
+  controls: true,
+
+  // Display a presentation progress bar
+  progress: false,
+
+  // Display the page number of the current slide
+  slideNumber: true,
+
+  // Push each slide change to the browser history
+  history: true,
+
+  // Enable keyboard shortcuts for navigation
+  keyboard: true,
+
+  // Transition style
+  transition: 'fade', // none/fade/slide/convex/concave/zoom
+
+  // Transition speed
+  transitionSpeed: 'default', // default/fast/slow
+
+  // Transition style for full page slide backgrounds
+  backgroundTransition: 'default', // none/fade/slide/convex/concave/zoom
+
+  // Number of slides away from the current that are visible
+  viewDistance: 2,
+
+  // Parallax background image
+  parallaxBackgroundImage: '', // e.g. "'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg'"
+
+  // Parallax background size
+  parallaxBackgroundSize: '', // CSS syntax, e.g. "2100px 900px"
+
+  // Amount to move parallax background (horizontal and vertical) on slide change
+  // Number, e.g. 100
+  parallaxBackgroundHorizontal: '',
+  parallaxBackgroundVertical: ''
+
+});
+
+</script>
+
+
+</body>
+</html>
